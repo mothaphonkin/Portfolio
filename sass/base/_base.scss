@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 0 min-content 85vh min-content repeat(2, min-content);
+
+  @include respond(tab-portrait) {
+    grid-template-rows: 0 min-content min-content min-content repeat(2, min-content);
+  }
+}
+
+
+

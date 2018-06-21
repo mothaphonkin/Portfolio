@@ -1,0 +1,46 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+{1200 - 1800} normal styles apply
+1800px +:       Big desktop
+*/
+
+// creating mixin for the phone
+// @content direktiva za prosledjivanje vise koda
+// @if direktiva za uslovno grananje
+
+/*
+$breakpoint argument choices:
+-small-phone
+-phone
+-tab-portrait
+-tab-landscape
+-big-desktop
+*/
+
+// prosledjuem promenljivu $breakpoint kao argument
+// ako je $breakpoint jednaka phone
+// izvrsice se media query u viticastim zagradama
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media (max-width: 21.5em) { @content } // 345px
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) { @content}  // 600px
+  }
+  @if $breakpoint == tab-portrait {
+    @media (max-width: 56.25em) { @content } // 900px
+  }
+  @if $breakpoint == tab-landscape {
+    @media (max-width: 75em) { @content } // 1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112em) { @content } // 1800px
+  }
+}
+
+
+

@@ -1,0 +1,65 @@
+.section-introduction {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  background-color: $color-primary;
+  outline: 2px solid $font-color-dark;
+  // pozvao sam mixin respond i prosledio argument
+  @include respond(phone) {
+    //height: 65vh;
+  }
+  // pozvao sam mixin respond i prosledio argument
+  @include respond(tab-portrait) {
+    //height: 85vh;
+  }
+
+  &-container {
+    width: 65%;
+    color: $color-white;
+    // pozvao sam mixin respond i prosledio argument
+    @include respond(tab-portrait) {
+      width: 85%;
+    }
+  }
+
+  // KOMENTARIO SAM ZATO STO shape-outside JOS UVEK
+  // NIJE PODRZANO U MOZILI A NECU DA PROBAM @SUPPORTS
+  // JER SAM NAPRAVIO DA RADI BEZ SHAPE-OUTSIDE
+  //&__left {
+  //  width: 250px;
+  //  height: 250px;
+  //  border-radius: 50%;
+  //  background-color: rgba(255, 255, 255, 0);
+  //  float: left;
+  //  -webkit-shape-outside: polygon(0 0, 100% 100%, 0 100%);
+  //  shape-outside: polygon(0 0, 100% 100%, 0 100%);
+  //  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+  //  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  //}
+  //
+  //&__right {
+  //  width: 250px;
+  //  height: 250px;
+  //  border-radius: 50%;
+  //  background-color: rgba(255, 255, 255, 0);
+  //  float: right;
+  //  -webkit-shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+  //  shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+  //  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  //  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  //}
+
+  &__intro-text {
+    line-height: 1.5;
+    color: $color-white;
+    // pozvao sam mixin respond i prosledio argument
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
+    // pozvao sam mixin respond i prosledio argument
+    @include respond(tab-portrait) {
+      margin-bottom: 10rem;
+    }
+  }
+}

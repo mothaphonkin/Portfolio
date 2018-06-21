@@ -1,0 +1,81 @@
+.techtools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  border-radius: 1rem;
+  background-color: $color-white;
+  transform: translateY(-15rem);
+  -webkit-box-shadow: 0 5px 5px 0 rgba($color-primary, 0.15);
+  box-shadow: 0 5px 5px 0 rgba($color-primary, 0.15);
+  // pozvao sam mixin respond i prosledio argument
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+   // pozvao sam mixin respond i prosledio argument
+  @include respond(tab-portrait) {
+    transform: translateY(-8rem);
+  }
+
+  & > h2 {
+    animation: none;
+    grid-column: 1 / -1;
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    font-weight: 400;
+    border-left: none;
+    border-right: none;
+    color: $font-color-dark;
+
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+  }
+
+  & > h2:first-of-type {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+
+  &-html5__svg {
+    fill: #EC5B23;
+
+  }
+
+  &-css3__svg {
+    fill: #49ABDC;
+  }
+
+  &-sass__svg {
+    fill: #CF6A9C;
+  }
+
+  &-git__svg {
+    fill: #3F2C00;
+  }
+
+  &-npm__svg {
+    fill: #D32E2D;
+  }
+
+  &-webstorm__svg {
+    fill: #00cdd7;
+  }
+
+  &-photoshop__svg {
+    fill: #001D26;
+  }
+
+  &-illustrator__svg {
+    fill: #ff7c00;
+  }
+
+  svg {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  img {
+    width: 8rem;
+    height: 8rem;
+  }
+}

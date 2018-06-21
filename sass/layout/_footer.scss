@@ -1,0 +1,105 @@
+.footer {
+  border: 1px solid $color-black;
+  border-right: none;
+  border-left: none;
+  background-color: $color-primary;
+
+  &__contact {
+    border: 1.5px solid $color-black;
+    border-radius: 1rem;
+    background-color: $font-color-dark;
+    color: $color-white;
+    transform: translateY(-5rem);
+    justify-content: space-around;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2), 0 0 0 1px $font-color-dark;
+    // pozvao sam mixin respond i prosledio argument
+    @include respond(tab-portrait) {
+      font-size: 70%;
+    }
+    // pozvao sam mixin respond i prosledio argument
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__contact-me {
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 400;
+    padding: 1rem 3.5rem;
+    transition-property: background-color, color, border;
+    transition-duration: .35s;
+    transition-timing-function: ease-out;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary;
+      color: $font-color-dark;
+    }
+  }
+
+  &__contact-info {
+    font-size: 3rem;
+    font-weight: 700;
+    // pozvao sam mixin respond i prosledio argument
+    @include respond(small-phone) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__get-in-touch {
+
+    @include respond(phone) {
+      margin: 2rem 0;
+    }
+  }
+
+  &__down {
+    color: $color-white;
+  }
+
+  &__logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  &__moto {
+    font-size: 2.3rem;
+    font-weight: 400;
+    // pozvao sam mixin respond i prosledio argument
+    @include respond(phone) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__copy {
+    // pozvao sam mixin respond i prosledio argument
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__love {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-white;
+    transform: translateY(.6rem);
+  }
+
+  &__copyright {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-secondary;
+    transform: translateY(.7rem);
+  }
+
+  &__credit {
+    //border: 1px solid $color-white;
+    font-size: 1rem;
+    text-align: center;
+
+    & a {
+      color: $color-white;
+    }
+  }
+}

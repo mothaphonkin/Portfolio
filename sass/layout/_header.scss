@@ -1,0 +1,29 @@
+.header {
+
+  &__content {
+    height: 100%;
+  }
+
+  &__logo {
+    width: 8rem;
+    height: 8rem;
+    // pozvao sam mixin respond i prosledio argument
+    @include respond(phone) {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  &__avatar {
+    animation-name: move-in-from-the-top;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+
+    &-main {
+      @include respond(phone) {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+  }
+}

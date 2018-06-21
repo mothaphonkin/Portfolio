@@ -1,0 +1,74 @@
+.section-education {
+
+  .formal-edu {
+
+    & > h2,
+    & > h3 {
+      animation: none;
+      color: $font-color-dark;
+    }
+
+    & > h2 {
+      font-size: 3rem;
+    }
+
+    & > h3 {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    .grid-container {
+      background-color: $color-white;
+      border-radius: 1rem;
+      border: 1px solid rgba($color-grey, .3);
+      box-shadow: 0 5px 5px 0 rgba(86, 163, 166, 0.15);
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      // pozvao sam mixin respond i prosledio argument
+      @include respond(tab-portrait) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__education,
+    &__logo {
+      border-right: 1px solid rgba($color-grey, .3);
+    }
+
+    & svg {
+      width: 11rem;
+      height: 11rem;
+      // pozvao sam mixin respond i prosledio argument
+      @include respond(tab-portrait) {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+
+    & h2 {
+      animation: none;
+      font-size: 2.5rem;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-rows: repeat(6, 5rem);
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      list-style-type: none;
+      border-top: 1px solid rgba($color-grey, .3);
+      // pozvao sam mixin respond i prosledio argument
+      @include respond(tab-portrait) {
+        text-align: center;
+        font-size: 1.6rem;
+      }
+      // pozvao sam mixin respond i prosledio argument
+      @include respond(small-phone) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

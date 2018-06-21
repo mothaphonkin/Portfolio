@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,500,700|Roboto:300,400" rel="stylesheet">
+  <!-- FAV ICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/icons/site.webmanifest">
+  <link rel="mask-icon" href="assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="assets/img/icons/druga.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="assets/img/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body class="container u-padding-top-small">
+<svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+  <symbol id="html5" viewBox="0 0 100 100">
+    <path d="M80.7,17.3l-5.6,62.8l-25.2,7.1l-25.1-7.1l-5.6-62.8H80.7z M69.3,30.2H30.7l2.1,23.3h26.7l-1,10l-8.6,2.3
+		l-8.6-2.3l-0.6-6.1h-7.6l1,12.1l15.8,4.4h0.2v0l15.7-4.3L68,45.7H39.8l-0.7-7.9h29.4L69.3,30.2z"/>
+  </symbol>
+  <symbol id="css3" viewBox="0 0 100 100">
+    <path id="XMLID_29_" d="M21.3,17.6h57.5l-5.2,59.3L50,84.6l-23.5-7.8L21.3,17.6z M68.1,29.5H31.9l0.9,7h18.4L33.4,44l0.6,6.9h24.9
+		l-0.6,9.3l-8.1,2.2l-7.9-1.9l-0.4-5.7h-7.3l0.9,11.1l14.8,4.3l14.7-4.3L66.8,44H50.2l17.2-7.5L68.1,29.5z"/>
+  </symbol>
+  <symbol id="sass" viewBox="0 0 100 100">
+    <path d="M84.7,56.5c2.8,0,5.2,0.5,7.3,1.6c2.1,1,3.6,2.4,4.7,4c1,1.7,1.5,3.3,1.4,5c-0.1,1.7-0.8,3.2-2.1,4.4
+		c-0.9,0.8-1.7,1.3-2.4,1.5c-0.5,0.1-0.8,0-0.8-0.2c0-0.3,0.2-0.5,0.7-0.8c1.5-1,2.4-2.3,2.7-3.8c0.1-0.9-0.1-1.9-0.6-3
+		c-0.6-1.3-1.5-2.4-2.8-3.3c-1.6-1.1-3.7-1.8-6.3-2.1c-3.5-0.4-6.6,0-9.3,1.1c0.5,1.3,0.8,2.5,0.8,3.5c0.1,2.2-1,4.2-3.5,6
+		c-1,0.7-2.1,1.3-3.2,1.7c-1.1,0.4-2,0.6-2.6,0.5c-1.9-0.4-2.3-2-1.3-5c0.3-1,0.9-2.1,1.8-3.3s2-2.4,3.3-3.5l-0.3-0.5
+		c-0.8-1.5-1.3-2.6-1.5-3.3c-0.3-1-0.5-2-0.8-2.8l-0.2-1L68,56c-1.3,2.4-2.5,4.5-3.8,6.3l-0.5,0.8c0.6,1.6,1,3,1.1,4.2
+		c0.1,2.5-0.9,4.5-2.9,6c-1,0.6-2,1.1-3,1.6s-2.2,0.7-3.6,0.8c-1.1,0-1.9-0.2-2.4-0.5c-0.6-0.5-0.8-1.2-0.4-2.1
+		c0.2-0.4,1.4-1.9,3.6-4.5l3.3-4.2l-0.6-1.3c-0.7-1.4-1.1-2.5-1.3-3.2c-0.3-1-0.6-2-0.8-2.9l-0.2-1l-1.5,3.6
+		c-1.2,2.8-2.3,5.2-3.3,7.2c-1.5,3-2.8,5.3-3.8,6.9l-0.3,0.5c-1.2,1.9-2.4,2.8-3.5,2.8s-1.9-0.7-2.3-2.1c-0.3-1-0.4-2.3-0.4-3.8
+		l0.3-2.1v0.2c-0.8,1.9-1.6,3.7-2.4,5.3c-0.7,1.3-1.3,2.2-1.7,2.7c-0.7,0.7-1.5,1-2.5,1s-1.7-0.3-2.2-0.8c-0.9-0.8-1.6-2.1-2.3-4
+		c-0.6-1.9-0.9-3.6-0.8-5.2c0.3-2.6,0.8-4.8,1.4-6.5L26.1,65v0.1c0.9,1.7,1.3,3.9,1.2,6.6c-0.2,3.1-1.1,5.9-2.7,8.3
+		c-1.7,2.7-4.1,4.7-7.1,5.9c-3,1.3-6,1.5-9,0.7c-0.8-0.2-1.6-0.8-2.3-1.8c-0.7-1-1.1-2.2-1.2-3.6C4.9,79.5,5.2,77.8,6,76
+		c1-2.2,3.4-4.5,7.1-7c2.2-1.5,4.6-2.9,7.1-4.1l0.8-0.5c-0.9-0.7-2.6-1.9-5-3.6c-3.9-2.7-6.8-4.9-8.6-6.6c-3-2.9-4.8-5.8-5.3-8.6
+		c-0.4-1.7,0-3.8,1.1-6.2c1.3-3.1,3.6-6.2,6.9-9.2c2.9-2.8,6.5-5.4,10.7-7.7c3.7-2.1,7.7-3.9,12-5.4s8.6-2.3,12.9-2.3s8,0.8,11,2.3
+		c3,1.6,4.9,3.7,5.6,6.5c0.7,2.8,0.5,5.6-0.7,8.5c-1.1,2.9-3,5.6-5.4,8c-2.5,2.4-5.2,4.2-8.3,5.4c-3.7,1.5-7.4,2.3-11,2.4
+		c-2.8,0.2-5.1,0-6.9-0.6c-1.5-0.5-2.8-1.2-3.8-2.1c-0.9-0.8-1.5-1.6-1.8-2.3c-0.3-0.8-0.3-1.3-0.1-1.4s0.4-0.2,0.5-0.1l0.8,0.8
+		c0.7,0.7,1.7,1.3,3,1.8c1.9,0.7,4.1,1,6.8,0.8c4.8-0.6,9.1-2.1,12.9-4.7c3.5-2.2,6.1-4.8,7.7-7.7c1.6-3,1.9-5.5,0.9-7.7
+		c-0.7-1.5-2.4-2.6-5.1-3.4s-6-0.8-9.9-0.2c-4.3,0.7-8.8,2.2-13.5,4.5C15.9,31.9,9.6,38.3,9.2,44.8c-0.1,2.4,0.8,4.7,2.7,6.9
+		c1.1,1.4,3.3,3.3,6.5,5.7c2.7,2.1,4.6,3.8,5.7,5l0.3,0.3l9.6-5.3c1-1.5,2.3-2.9,4-4.1c1.6-1.2,3.1-1.8,4.4-1.8
+		c1.3,0,2.2,0.5,2.7,1.7c0.4,0.8,0.5,1.8,0.4,3.1l-0.3,1.5l0.5-0.3c0.5-0.4,1.1-0.5,1.9-0.2s1.1,0.8,1,1.6L48,60.5
+		c-0.9,3.6-1.5,6.2-1.8,7.8C46,69.1,46,69.8,46,70.4c0,0.6,0.1,0.9,0.2,0.9c0.1,0,0.3-0.3,0.6-0.9l0.5-1.1c0.1,0,0.1,0.1,0,0.2
+		l1.6-3.5c3.9-8.6,6-13.4,6.3-14.4l0.9-2.8c0.1-0.2,0.5-0.4,1.2-0.6c0.7-0.2,1.5-0.3,2.5-0.3c1.4,0,2.1,0.4,2.1,1.1l-0.2,0.8
+		c-0.5,1.5-0.8,2.6-1,3.5c-0.2,0.8-0.1,1.8,0.1,3l0.1,0.6c0.1,0.7,0.6,1.8,1.4,3.3c1.2-2,2.3-4.1,3.5-6.2c1.4-2.6,2.2-4.3,2.4-5.1
+		c0.2-1,0.4-2,0.8-2.9c0.1-0.3,0.5-0.5,1.3-0.7s1.6-0.2,2.5-0.2c1.4,0,2.2,0.4,2.3,1.1l-0.3,0.6c-0.5,1.6-0.8,2.8-0.9,3.6
+		c-0.1,0.8,0,1.8,0.2,3v0.6c0.1,0.7,0.6,1.8,1.5,3.5l0.5,1C78.7,57.1,81.6,56.5,84.7,56.5z M20.3,78.2c3.1-3.4,4.1-7.4,2.9-11.9
+		l-2.4,1.5c-2.7,1.6-4.9,3.2-6.5,4.7s-2.6,3.3-3.1,5.1c-0.5,1.8-0.2,3,0.7,3.6c0.9,0.6,2.2,0.5,3.9-0.1C17.5,80.6,19,79.6,20.3,78.2
+		z M40.4,64.4c0.5-1.3,1.1-2.8,1.6-4.7c0.8-2.4,1.1-3.8,0.8-4.2c-0.3-0.4-0.7-0.5-1.4-0.1c-0.7,0.3-1.4,0.8-2.1,1.6
+		c-0.5,0.6-1.1,1.5-1.8,2.7s-1.2,2.4-1.5,3.5c-0.7,2-1,4-0.9,6c0.1,2,0.4,3.1,1,3.2c0.6,0.2,1.2-0.6,1.9-2.2
+		c0.5-0.8,1.1-2.3,1.8-4.4C40.1,65.2,40.3,64.7,40.4,64.4z M57,72.4c2.5-1.5,3.8-3.3,3.8-5.3V67l-1.7,2.1l-3,3.3
+		c-0.1,0.1-0.1,0.2,0,0.3C56.3,72.8,56.5,72.7,57,72.4z M70,69.5c2.6-1,3.9-2.8,3.9-5.3c0-0.4-0.1-1-0.3-1.7
+		c-1.3,1.2-2.3,2.5-2.9,3.8C69.8,68.2,69.6,69.2,70,69.5z"/>
+  </symbol>
+  <symbol id="git" viewBox="0 0 100 100">
+    <path d="M19.3,46c0-3.3,1-6,3-8.2c2-2.1,4.5-3.4,7.5-3.9c3-0.4,5.8,0.1,8.5,1.7c2.4,0,5.1-0.6,8.1-1.8v7.5
+		c-0.9,0.3-1.9,0.6-3,0.9c0.4,1.1,0.6,2.1,0.6,3.1c0,3.1-0.9,5.8-2.7,8c-1.8,2.2-4.2,3.7-7.3,4.3c-1,0.2-1.7,0.5-2.2,1
+		C31.3,59.2,31,60,31,61s0.6,1.8,1.8,2.4c0.7,0.4,2,0.9,4,1.5c3,0.7,5.1,1.4,6.3,2.2c2,1.4,3,3.4,3,6.1c0,7.6-4.5,11.4-13.5,11.4
+		c-3.8,0-6.9-0.7-9.3-2.1c-3-1.7-4.5-4.3-4.5-7.8c0-4.1,2.2-6.9,6.7-8.4v-0.2c-1.1-0.7-1.8-1.7-2.2-3.1c-0.4-1.4-0.4-2.8,0.1-4.1
+		c0.4-1.3,1.1-2.2,2-2.6v-0.1c-1.8-0.6-3.3-1.9-4.4-4C19.9,50,19.3,48,19.3,46z M32.5,70.4c-4,0.1-6,1.4-6,4s2.1,3.8,6.4,3.8
+		c3.8,0,5.7-1.3,5.7-3.9S36.6,70.4,32.5,70.4z M31.9,51.1c3,0,4.5-1.7,4.5-5.1c0-1.7-0.4-3-1.3-4s-2-1.5-3.2-1.5S29.5,41,28.6,42
+		s-1.3,2.3-1.3,4C27.3,49.4,28.8,51.1,31.9,51.1z M59.3,23.1c0-1.5-0.5-2.8-1.4-3.9c-0.9-1.1-2.1-1.6-3.6-1.6s-2.7,0.5-3.7,1.6
+		c-1,1.1-1.5,2.4-1.5,3.8c0,1.4,0.5,2.7,1.5,3.8c1,1.1,2.2,1.6,3.6,1.6c1.4,0,2.6-0.5,3.6-1.6C58.8,25.8,59.3,24.5,59.3,23.1z
+		 M58.4,34.2H50c0.2,1.1,0.3,6.5,0.3,16.1S50.2,65.4,50,66.8h8.4c-0.1-1.4-0.2-6.9-0.2-16.5S58.2,35.3,58.4,34.2z M81.1,58.4v0.2
+		c-1.2,0.8-2.6,1.2-4.3,1.2c-2.2,0-3.3-1.6-3.3-4.9V41.2l7.6,0.1v-7.2h-7.6v-0.9c0-2.3,0-4,0.1-5.2h-8.4c0.1,0.9,0.1,2.5,0.1,4.9
+		v1.2h-3.6v7.2c1.2-0.2,2.1-0.2,2.8-0.1h0.7v0.1v13.2c0,4,0.5,6.9,1.5,8.8c1.3,2.6,3.8,3.9,7.5,3.9c2.7,0,4.9-0.5,6.7-1.5V58.4z"/>
+  </symbol>
+  <symbol id="github" viewBox="0 0 100 100">
+    <path d="M49.5,13.9c6.8,0,13.1,1.6,18.9,4.8c5.8,3.2,10.3,7.5,13.6,13c3.4,5.7,5.1,11.9,5.1,18.7
+		c0,8.3-2.3,15.7-7,22.2S69.5,83.8,62,86.3c-0.8,0.2-1.4,0.1-1.9-0.3s-0.7-0.9-0.7-1.5V71.9c0-3.2-0.8-5.5-2.5-6.9
+		c3.7-0.4,6.4-0.9,8.2-1.5c2.8-1,4.9-2.5,6.4-4.5c1.7-2.6,2.5-6.1,2.5-10.6c0-1.9-0.3-3.5-1-4.9c-0.5-1-1.4-2.2-2.8-3.7
+		c0.4-1,0.6-2.2,0.7-3.6c0.1-2.2-0.2-4.4-1-6.6c-1-0.3-2.4-0.1-4.2,0.6c-1.2,0.5-2.6,1.2-4.2,2.1l-1.9,1.3c-3.1-0.9-6.3-1.3-9.5-1.3
+		s-6.4,0.4-9.4,1.3l-1.9-1.3c-1.6-0.9-3-1.6-4.3-2.1c-1.8-0.7-3.1-0.9-4-0.6c-0.9,2.2-1.2,4.4-1,6.6c0,1.4,0.2,2.5,0.6,3.4
+		c-1.2,1.5-2.1,2.9-2.6,4.1c-0.5,1.2-0.8,2.8-0.8,4.7c0,4.5,0.8,8,2.4,10.5c1.4,2.1,3.5,3.6,6.3,4.6c1.8,0.6,4.5,1.1,8.1,1.5
+		c-1.3,1.2-2.1,2.9-2.4,5.1c-1.7,0.8-3.3,1.1-4.9,0.9c-2.6-0.2-4.6-1.5-6-4c-0.6-1.1-1.4-2-2.4-2.7c-0.7-0.4-1.4-0.7-2.2-1l-1-0.1
+		c-1.1,0-1.7,0.2-1.7,0.5c0,0.3,0.2,0.7,0.7,1.1l0.7,0.6c0.7,0.4,1.4,1,2.1,1.9c0.6,0.7,1.1,1.5,1.5,2.4l0.6,1.2
+		c0.5,1.5,1.4,2.6,2.8,3.4c1.2,0.7,2.6,1.1,4.3,1.3c1.2,0.1,2.4,0,3.7-0.1l1.6-0.1l0.1,9.1c0,0.6-0.2,1.1-0.7,1.5
+		c-0.4,0.4-1.1,0.5-1.9,0.3c-7.6-2.5-13.7-7-18.4-13.6c-4.7-6.5-7-14-7-22.2c0-6.8,1.6-13,4.8-18.6s7.6-10,13.2-13.2
+		C36.4,15.5,42.7,13.9,49.5,13.9z M25.7,64.4c0.2-0.2,0.4-0.2,0.7-0.1c0.3,0.1,0.4,0.3,0.3,0.6c-0.1,0.3-0.3,0.3-0.7,0.1
+		C25.8,64.8,25.6,64.6,25.7,64.4z M27.4,65.6c0.2-0.2,0.4-0.1,0.7,0.2c0.3,0.3,0.3,0.5,0.1,0.7c-0.2,0.2-0.4,0.2-0.7-0.1
+		C27.2,66.1,27.2,65.8,27.4,65.6z M28.9,67.6c0.2-0.1,0.4-0.1,0.5-0.1s0.3,0.2,0.4,0.4c0.3,0.4,0.3,0.7,0,0.9
+		c-0.1,0.1-0.2,0.1-0.4,0c-0.1-0.1-0.3-0.2-0.5-0.3C28.7,68,28.7,67.7,28.9,67.6z M30.7,69.7c0.1-0.1,0.2-0.1,0.4-0.1
+		s0.4,0.1,0.5,0.3c0.1,0.1,0.2,0.3,0.3,0.5c0,0.2,0,0.3-0.1,0.4c-0.3,0.3-0.6,0.3-1-0.1c-0.2-0.2-0.3-0.4-0.3-0.6
+		C30.5,69.9,30.6,69.8,30.7,69.7z M33.1,71.6c0.1-0.4,0.4-0.5,0.9-0.4c0.5,0.1,0.7,0.3,0.7,0.6c0,0.3-0.2,0.4-0.4,0.5
+		s-0.4,0.1-0.6,0c-0.2-0.1-0.4-0.2-0.5-0.4C33,71.8,33,71.7,33.1,71.6z M37.7,72.2c0-0.1-0.1-0.2-0.2-0.3s-0.4-0.2-0.7-0.2
+		c-0.5,0-0.7,0.2-0.7,0.6s0.3,0.6,0.8,0.5C37.4,72.8,37.7,72.6,37.7,72.2z M39.7,71.3c0.5,0,0.8,0.2,0.8,0.4c0,0.3-0.2,0.5-0.7,0.7
+		c-0.2,0-0.4,0-0.5-0.1c-0.1,0-0.2-0.2-0.3-0.5C38.9,71.6,39.2,71.4,39.7,71.3z"/>
+  </symbol>
+  <symbol id="npm" viewBox="0 0 100 100">
+    <path d="M93.1,65.5H50v4.8H30.8v-4.8H6.9V36.7h86.2V65.5z M11.7,41.5v19.2h9.6V46.3h4.8v14.4h4.8V41.5H11.7z
+		 M35.6,41.5v23.9h9.6v-4.8h9.6V41.5H35.6z M45.2,55.9v-9.6H50v9.6H45.2z M59.6,41.5v19.2h9.6V46.3h4.8v14.4h4.8V46.3h4.8v14.4h4.8
+		V41.5H59.6z"/>
+  </symbol>
+  <symbol id="bem" viewBox="0 0 100 100">
+    <style type="text/css">
+      .st0 {
+        fill: #1E1819;
+      }
+
+      .st1 {
+        fill: #56A3A6;
+      }
+
+      .st2 {
+        fill: #1A1920;
+      }
+
+      .st3 {
+        fill: #B68364;
+      }
+
+      .st4 {
+        fill: #FFFFFF;
+      }
+    </style>
+
+    <path id="XMLID_29_" class="st0" d="M26,87.5l-20.2-35c-0.9-1.5-0.9-3.5,0-5l20.2-35c0.9-1.5,2.5-2.5,4.3-2.5h40.4
+		c1.8,0,3.4,1,4.3,2.5l20.2,35c0.9,1.5,0.9,3.5,0,5L75,87.5C74.1,89,72.5,90,70.7,90H30.3C28.5,90,26.9,89,26,87.5z"/>
+    <polygon id="XMLID_61_" class="st1" points="32.5,80 15,50 32.5,20 67.5,20 85,50 67.5,80 	"/>
+    <path id="XMLID_63_" class="st2"
+          d="M67,67H33c-1.7,0-3-1.3-3-3V37c0-1.7,1.3-3,3-3h34c1.7,0,3,1.3,3,3v27C70,65.7,68.6,67,67,67z"
+    />
+    <path id="XMLID_62_" class="st3"
+          d="M66,65H34c-2.2,0-4-1.8-4-4V36c0-2.2,1.8-4,4-4h32c2.2,0,4,1.8,4,4v25C70,63.2,68.2,65,66,65z"
+    />
+
+    <path id="XMLID_2_" class="st4" d="M39.6,51.4v-7.6c0-0.4,0.3-0.7,0.7-0.7h0.2h3.6c1.1,0,2,0.9,2,2v0.9c0,0.6-0.5,1.3-1.1,1.5
+			c0.6,0.2,1.1,0.9,1.1,1.5v1.1c0,1.1-0.9,2.1-2,2.1h-3.8C39.9,52.1,39.6,51.8,39.6,51.4z M40.7,47h3.4c0.5,0,0.9-0.4,0.9-0.9v-1.1
+			c0-0.5-0.4-0.9-0.9-0.9h-3.2c-0.1,0-0.2,0.1-0.2,0.2V47z M45,49c0-0.5-0.4-0.9-0.9-0.9h-3.4v2.8c0,0.1,0.1,0.2,0.2,0.2h3.2
+			c0.5,0,0.9-0.4,0.9-0.9V49z"/>
+    <path id="XMLID_34_" class="st4" d="M48.6,45.1v2.3c0.1-0.1,0.3-0.2,0.6-0.2h3.9V48c0,0.1-0.1,0.2-0.2,0.2h-4.4v2.1
+			c0,0.5,0.4,0.9,0.9,0.9h3.9c0.1,0,0.2,0.1,0.2,0.2v0.9h-4c-1.1,0-2-0.9-2-2v-4.9c0-1.1,0.9-2,2-2h4V44c0,0.1-0.1,0.2-0.2,0.2h-3.9
+			C49,44.1,48.6,44.6,48.6,45.1z"/>
+    <path id="XMLID_64_" class="st4" d="M56,43.3l3,5.5l3-5.5c0.1-0.1,0.2-0.2,0.3-0.2h0.8c0.1,0,0.2,0.1,0.2,0.2v8.8h-1
+			c-0.1,0-0.2-0.1-0.2-0.2v-7l-2.5,4.8c0,0.1-0.1,0.1-0.2,0.1h-0.9c-0.1,0-0.2-0.1-0.2-0.1L55.8,45v7c0,0.1-0.1,0.2-0.2,0.2h-1v-8.8
+			c0-0.1,0.1-0.2,0.2-0.2h0.8C55.8,43.1,55.9,43.2,56,43.3z"/>
+
+  </symbol>
+  <symbol id="webstorm" viewBox="0 0 100 100">
+    <path d="M25.4,74.6h49.2V25.4H25.4V74.6z M48.5,68.8H29.7v-3.2h18.8V68.8z M62.3,31c2.8,0,5.5,1,7.6,2.7l-2.4,3.5
+		c-1.5-1.2-3.4-1.9-5.3-2c-1.7,0-2.7,0.8-2.7,1.9c0,1.4,0.9,1.9,4.4,2.7c4.1,1.2,6.5,2.7,6.5,6.3c0,4.2-3.2,6.5-7.5,6.5
+		c-3.2-0.1-6.3-1.3-8.8-3.4l2.6-3.3c1.9,1.5,3.8,2.5,6.2,2.5c1.9,0,3-0.8,3-2c0-1.2-0.8-1.8-4.1-2.7c-4.2-1.1-6.8-2.3-6.8-6.4v-0.1
+		C55.1,33.5,58.1,31,62.3,31z M33.4,31.4l3.2,12.1l3.5-12.1h3.5l3.5,12.1l3.1-12.1h4.9l-6,20.8h-3.9l-3.4-12.1l-3.4,12.1h-3.9
+		l-6-20.8H33.4z"/>
+    <path d="M90.2,37l-6.4-15.9l-4-9.6L61.1,9.8l-2.9,2.8l-3.7-1.4l-11.8,6.3L29.9,10L9.8,18.2l10.8,64.2l44.4,7.8
+		l2.8-14.3l0.5-0.3h-44V24.4h51.2v47l14.6-8.6l-8.8-16.5"/>
+  </symbol>
+  <symbol id="photoshop" viewBox="0 0 100 100">
+    <path d="M9,10v80h82V10H9z M12.4,13.4h75.2v73.2H12.4V13.4z M28.8,28.7c0-0.2,0.5-0.4,0.8-0.4c2.2-0.1,5.4-0.2,8.8-0.2
+		c9.5,0,13.2,5.2,13.2,11.8c0,8.7-6.3,12.4-14,12.4c-1.3,0-1.7-0.1-2.6-0.1v13.1c0,0.3-0.1,0.4-0.4,0.4h-5.3c-0.3,0-0.4-0.1-0.4-0.4
+		L28.8,28.7L28.8,28.7z M34.9,46.9c0.8,0.1,1.4,0.1,2.8,0.1c4,0,7.8-1.4,7.8-6.8c0-4.3-2.7-6.5-7.3-6.5c-1.4,0-2.6,0.1-3.3,0.1
+		L34.9,46.9L34.9,46.9z M64.3,42.8c-2.7,0-3.6,1.4-3.6,2.5c0,1.2,0.6,2.1,4.2,3.9c5.4,2.6,7,5.1,7,8.7c0,5.5-4.2,8.4-9.8,8.4
+		c-3,0-5.5-0.6-7-1.5c-0.2-0.1-0.3-0.3-0.3-0.6v-5c0-0.3,0.2-0.5,0.4-0.3c2.1,1.4,4.6,2,6.9,2c2.7,0,3.8-1.1,3.8-2.7
+		c0-1.2-0.8-2.3-4.2-4.1c-4.9-2.3-6.9-4.7-6.9-8.6c0-4.4,3.4-8.1,9.4-8.1c2.9,0,5,0.5,6.1,1c0.3,0.2,0.3,0.5,0.3,0.7v4.7
+		c0,0.3-0.2,0.5-0.5,0.3C68.7,43.4,66.5,42.8,64.3,42.8L64.3,42.8z"/>
+  </symbol>
+  <symbol id="illustrator" viewBox="0 0 100 100">
+    <path d="M9,10v80h82V10H9z M12.4,13.4h75.2v73.2H12.4V13.4z M37.4,55.3l-2.7,10.2c-0.1,0.3-0.2,0.3-0.5,0.3h-5
+		c-0.3,0-0.4-0.1-0.3-0.5l9.7-34c0.2-0.6,0.3-1.2,0.3-2.8c0-0.2,0.1-0.3,0.3-0.3h7.2c0.2,0,0.3,0.1,0.4,0.3l10.9,36.9
+		c0.1,0.3,0,0.5-0.3,0.5h-5.6c-0.3,0-0.5-0.1-0.5-0.3l-2.8-10.3L37.4,55.3L37.4,55.3z M47,49.7c-1-3.8-3.2-12.1-4.1-16.1h-0.1
+		c-0.7,4-2.5,10.8-3.9,16.1H47z M62.4,30.7c0-2.2,1.5-3.5,3.5-3.5c2.1,0,3.5,1.4,3.5,3.5c0,2.3-1.5,3.5-3.6,3.5
+		C63.7,34.2,62.3,33,62.4,30.7L62.4,30.7z M62.7,38.5c0-0.3,0.1-0.4,0.4-0.4h5.4c0.3,0,0.4,0.1,0.4,0.4v27c0,0.3-0.1,0.4-0.4,0.4
+		h-5.3c-0.3,0-0.5-0.2-0.5-0.4L62.7,38.5L62.7,38.5z"/>
+  </symbol>
+  <symbol id="angle-right" viewBox="0 0 100 100">
+    <path d="M44,74.4c-0.7,0.7-1.6,1.1-2.6,1.1c-1,0-1.9-0.4-2.6-1.1l-3.3-3.5c-0.7-0.7-1.1-1.6-1.1-2.6
+		s0.4-1.9,1.1-2.6L50,51.3L35.5,36.8c-0.7-0.7-1.1-1.6-1.1-2.6c0-1,0.4-1.9,1.1-2.6l3.3-3.5c0.7-0.7,1.6-1.1,2.6-1.1
+		c1,0,1.9,0.4,2.6,1.1l20.5,20.5c0.7,0.7,1.1,1.6,1.1,2.6c0,1-0.4,1.9-1.1,2.6L44,74.4z"/>
+  </symbol>
+  <symbol id="browser" viewBox="0 0 100 100">
+    <style type="text/css">
+      .st8 {
+        opacity: 0.25;
+        fill: #FFFFFF;
+        enable-background: new;
+      }
+
+      .st9 {
+        fill: #FFFFFF;
+      }
+
+      .st10 {
+        fill: #EFEFEF;
+      }
+
+      .st11 {
+        fill: #E0E0E0;
+      }
+
+      .st12 {
+        fill: #FF0000;
+      }
+
+      .st13 {
+        fill: #22ACDD;
+      }
+
+      .st14 {
+        fill: #C9C9C9;
+      }
+
+      .st15 {
+        fill: #F33052;
+      }
+    </style>
+
+    <path id="XMLID_24_" d="M98.5,20.3v-4.8c0-3-2.5-5.5-5.5-5.5H23.3H7c-3,0-5.5,2.5-5.5,5.5v4.8H98.5z"/>
+    <path id="XMLID_23_" class="st8" d="M29.4,10h-6.1H7c-3,0-5.5,2.5-5.5,5.5v4.8h21.9L29.4,10z"/>
+    <rect id="XMLID_22_" x="3" y="21.8" class="st9" width="93.9" height="66.7"/>
+    <path id="XMLID_50_" class="st10" d="M95.4,23.3V87H4.6V23.3L95.4,23.3 M98.5,20.3h-97V90h97V20.3L98.5,20.3z"/>
+    <path id="XMLID_47_" class="st11" d="M93.9,24.9v60.6H6.1V24.9L93.9,24.9 M94.7,24.1H5.3v62.1h89.4V24.1L94.7,24.1z"/>
+    <circle id="XMLID_17_" class="st12" cx="9.2" cy="15.2" r="1.5"/>
+    <circle id="XMLID_16_" class="st13" cx="13.9" cy="15.2" r="1.5"/>
+    <circle id="XMLID_15_" class="st9" cx="18.5" cy="15.2" r="1.5"/>
+    <path id="XMLID_14_" class="st9" d="M82.6,17.9H33.9c-1.5,0-2.7-1.2-2.7-2.7l0,0c0-1.5,1.2-2.7,2.7-2.7h48.7
+			c1.5,0,2.7,1.2,2.7,2.7l0,0C85.3,16.6,84.1,17.9,82.6,17.9z"/>
+    <path id="XMLID_13_" d="M35.7,13.9l0.4,1.4c0.1,0.3,0.2,0.6,0.2,0.9h0c0.1-0.3,0.2-0.6,0.2-0.9l0.5-1.4h0.4l0.4,1.4
+		c0.1,0.3,0.2,0.6,0.2,0.9h0c0.1-0.3,0.1-0.6,0.2-0.9l0.4-1.4h0.5l-0.9,2.8h-0.5l-0.4-1.3c-0.1-0.3-0.2-0.6-0.2-0.9l0,0
+		c-0.1,0.3-0.2,0.6-0.2,0.9l-0.5,1.3h-0.5l-0.8-2.8L35.7,13.9L35.7,13.9L35.7,13.9z"/>
+    <path id="XMLID_12_" d="M40.1,13.9l0.4,1.4c0.1,0.3,0.2,0.6,0.2,0.9h0c0.1-0.3,0.2-0.6,0.2-0.9l0.5-1.4h0.4l0.4,1.4
+		c0.1,0.3,0.2,0.6,0.2,0.9h0c0.1-0.3,0.1-0.6,0.2-0.9l0.4-1.4h0.5l-0.9,2.8h-0.5l-0.4-1.4c-0.1-0.3-0.2-0.6-0.2-0.9l0,0
+		c-0.1,0.3-0.2,0.6-0.2,0.9l-0.5,1.3h-0.5l-0.8-2.8L40.1,13.9L40.1,13.9L40.1,13.9z"/>
+    <path id="XMLID_11_" d="M44.4,13.9l0.4,1.4c0.1,0.3,0.2,0.6,0.2,0.9h0c0.1-0.3,0.2-0.6,0.2-0.9l0.5-1.4h0.4l0.4,1.4
+		c0.1,0.3,0.2,0.6,0.2,0.9h0c0.1-0.3,0.1-0.6,0.2-0.9l0.4-1.4H48l-0.9,2.8h-0.5l-0.4-1.3c-0.1-0.3-0.2-0.6-0.2-0.9l0,0
+		c-0.1,0.3-0.2,0.6-0.2,0.9l-0.5,1.3h-0.5l-0.8-2.8L44.4,13.9L44.4,13.9z"/>
+    <path id="XMLID_10_"
+          d="M48.2,16.4c0-0.2,0.2-0.4,0.4-0.4s0.3,0.2,0.3,0.4s-0.1,0.4-0.4,0.4C48.3,16.8,48.2,16.6,48.2,16.4z"/>
+    <rect id="XMLID_9_" x="88.9" y="14.9" class="st9" width="4.4" height="0.8"/>
+    <polygon id="XMLID_8_" class="st9" points="91.4,17.5 90.8,16.9 92.6,15.2 90.8,13.5 91.4,13 93.7,15.2 		"/>
+    <polygon id="XMLID_7_" class="st14" points="82.9,14.3 81.5,16.2 80,14.3 	"/>
+    <path id="XMLID_31_" d="M48.4,57.6v-4.9l-5-0.5c-0.3-1-0.7-2-1.3-2.9l3.2-3.9l-3.5-3.5l-4.1,3.3c-0.8-0.5-1.8-0.8-2.7-1l-0.5-5.3
+		h-2.4h0h-2.4l-0.5,5.3c-1,0.2-1.9,0.6-2.7,1l-4.1-3.3l-3.5,3.5l3.2,3.9c-0.5,0.9-1,1.9-1.3,2.9l-5,0.5v4.9l5,0.5
+		c0.3,1,0.7,2,1.3,2.9l-3.2,3.9l3.5,3.5l4.1-3.3c0.8,0.5,1.8,0.8,2.7,1l0.5,5.3h2.4h0h2.4l0.5-5.3c1-0.2,1.9-0.5,2.7-1l4.1,3.3
+		l3.5-3.5l-3.2-3.9c0.5-0.9,1-1.9,1.3-2.9L48.4,57.6z M32.2,62.5c-4,0-7.3-3.3-7.3-7.3c0-4,3.3-7.3,7.3-7.3c4,0,7.3,3.3,7.3,7.3
+		S36.2,62.5,32.2,62.5z"/>
+    <circle id="XMLID_4_" class="st13" cx="32.2" cy="55.2" r="4.1"/>
+    <path id="XMLID_3_" class="st15" d="M37.3,54.3l15.5-8v2.3l-13.1,6.5v0.1l13.1,6.5v2.3l-15.5-8L37.3,54.3L37.3,54.3z"/>
+    <path id="XMLID_2_" class="st15" d="M54.9,65.4l9.3-24.2h2.3l-9.3,24.2H54.9z"/>
+    <path id="XMLID_1_" class="st15" d="M84.1,56.1l-15.5,7.9v-2.3l13.1-6.5v-0.1l-13.1-6.5v-2.3l15.5,7.9V56.1z"/>
+  </symbol>
+  <symbol id="education" viewBox="0 0 100 100">
+    <style type="text/css">
+      .st16 {
+        fill: #1A1920;
+      }
+    </style>
+    <path class="st16" d="M19.3,79.4c-5.2,0-9.3,4.2-9.3,9.3c0,0.7,0.6,1.3,1.3,1.3h16c0.7,0,1.3-0.6,1.3-1.3
+				C28.7,83.6,24.5,79.4,19.3,79.4z M12.8,87.4c0.5-2.6,2.6-4.7,5.2-5.2v2.5h2.7v-2.5c2.6,0.5,4.7,2.6,5.2,5.2H12.8z"/>
+    <path class="st16" d="M88.7,67.4h-2.3c-0.1-0.2-0.2-0.4-0.2-0.5l1.7-1.7c0.5-0.5,0.5-1.4,0-1.9l-5.7-5.7c-0.3-0.3-0.6-0.4-1-0.4
+				c2.1-1.1,3.6-3.3,3.6-5.9V16.7c0-3.7-3-6.7-6.7-6.7H16.7C13,10,10,13,10,16.7v34.7c0,3.7,3,6.7,6.7,6.7h17.4l-5,9.3h-0.4h-2
+				c-2.6,0-4.7,2.1-4.7,4.7s2.1,4.7,4.7,4.7h28.7c0,0.7,0.6,1.3,1.3,1.3H59c0.1,0.2,0.2,0.4,0.2,0.5l-1.7,1.7
+				c-0.5,0.5-0.5,1.4,0,1.9l5.7,5.7c0.5,0.5,1.4,0.5,1.9,0l1.7-1.7c0.2,0.1,0.4,0.2,0.5,0.2v2.3c0,0.7,0.6,1.3,1.3,1.3h8
+				c0.7,0,1.3-0.6,1.3-1.3v-2.3c0.2-0.1,0.4-0.2,0.5-0.2l1.7,1.7c0.5,0.5,1.4,0.5,1.9,0l5.7-5.7c0.5-0.5,0.5-1.4,0-1.9l-1.7-1.7
+				c0.1-0.2,0.2-0.4,0.2-0.5h2.3c0.7,0,1.3-0.6,1.3-1.3v-8C90,68,89.4,67.4,88.7,67.4z M12.7,16.7c0-2.2,1.8-4,4-4H78
+				c2.2,0,4,1.8,4,4v28H12.7V16.7z M16.7,55.3c-2.2,0-4-1.8-4-4v-4H82v4c0,2.2-1.8,4-4,4h-1.3h-8H58.4H36.3H16.7z M80.2,57.6
+				l-1.6,1.6c-0.2-0.1-0.4-0.2-0.5-0.2v-1C78.8,58,79.5,57.9,80.2,57.6z M67.3,58v1c-0.2,0.1-0.4,0.2-0.5,0.2L65.6,58L67.3,58
+				L67.3,58z M62.8,58l-1.2,1.2L60.9,58H62.8z M55.3,74H26.7c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2h2h1.2h25.5V74z M32.1,67.4l5-9.3
+				h20.6l2.1,3.1l-2.2,2.2c-0.5,0.5-0.5,1.4,0,1.9l1.7,1.7c-0.1,0.2-0.2,0.4-0.2,0.5h-2.3H32.1z M87.4,75.4h-2
+				c-0.6,0-1.1,0.4-1.3,0.9c-0.2,0.6-0.5,1.3-0.8,2c-0.3,0.5-0.2,1.2,0.2,1.6l1.4,1.4L81.2,85l-1.4-1.4c-0.4-0.4-1-0.5-1.6-0.2
+				c-0.6,0.3-1.3,0.6-2,0.8c-0.5,0.2-0.9,0.7-0.9,1.3v2H70v-2c0-0.6-0.4-1.1-0.9-1.3c-0.6-0.2-1.3-0.5-2-0.8
+				c-0.5-0.3-1.2-0.2-1.6,0.2L64.2,85l-3.8-3.8l1.4-1.4c0.4-0.4,0.5-1,0.2-1.6c-0.3-0.6-0.6-1.3-0.8-2c-0.2-0.5-0.7-0.9-1.3-0.9h-2
+				V70h2c0.6,0,1.1-0.4,1.3-0.9c0.2-0.6,0.5-1.3,0.8-2c0.3-0.5,0.2-1.2-0.2-1.6l-1.4-1.4l3.8-3.8l1.4,1.4c0.4,0.4,1,0.5,1.6,0.2
+				c0.6-0.3,1.3-0.6,2-0.8c0.5-0.2,0.9-0.7,0.9-1.3V58h5.3v2c0,0.6,0.4,1.1,0.9,1.3c0.6,0.2,1.3,0.5,2,0.8c0.5,0.3,1.2,0.2,1.6-0.2
+				l1.4-1.4l3.8,3.8l-1.4,1.4c-0.4,0.4-0.5,1-0.2,1.6c0.3,0.6,0.6,1.3,0.8,2c0.2,0.5,0.7,0.9,1.3,0.9h2L87.4,75.4L87.4,75.4z"/>
+    <path class="st16" d="M72.7,64.7c-4.4,0-8,3.6-8,8s3.6,8,8,8s8-3.6,8-8S77.1,64.7,72.7,64.7z M72.7,78c-2.9,0-5.3-2.4-5.3-5.3
+				s2.4-5.3,5.3-5.3c2.9,0,5.3,2.4,5.3,5.3S75.6,78,72.7,78z"/>
+    <path id="XMLID_32_" class="st16"
+          d="M36.3,20.3l-1.9-1.9l-9.3,9.3c-0.5,0.5-0.5,1.4,0,1.9l9.3,9.3l1.9-1.9l-8.4-8.4L36.3,20.3z"
+    />
+    <path id="XMLID_31_" class="st16" d="M65.6,27.7l-9.3-9.3l-1.9,1.9l8.4,8.4l-8.4,8.4l1.9,1.9l9.3-9.4
+				C66.2,29.1,66.2,28.3,65.6,27.7z"/>
+    <rect id="XMLID_30_" x="31.9" y="26" transform="matrix(0.4472 -0.8944 0.8944 0.4472 0.6112 55.6653)" class="st16"
+          width="26.8" height="2.7"/>
+    <rect id="XMLID_29_" x="62" y="36.7" class="st16" width="2.7" height="2.7"/>
+    <rect id="XMLID_28_" x="67.3" y="36.7" class="st16" width="2.7" height="2.7"/>
+    <rect id="XMLID_27_" x="72.7" y="36.7" class="st16" width="2.7" height="2.7"/>
+  </symbol>
+  <symbol id="courses" viewBox="0 0 100 100">
+    <style type="text/css">
+      .st17 {
+        fill: #1A1920;
+      }
+    </style>
+    <path id="XMLID_30_" class="st17" d="M13.7,10C13.7,10,13.7,10,13.7,10c-1,0-1.9,0.4-2.6,1.1c-0.7,0.7-1.1,1.7-1.1,2.7v56.2
+				c0,2.1,1.7,3.7,3.8,3.7c8.7,0,23.3,1.8,33.4,12.4V27.3c0-0.7-0.2-1.4-0.5-1.9C38.3,12.1,22.4,10,13.7,10z"/>
+    <path id="XMLID_29_" class="st17" d="M90.1,69.9V13.8c0-1-0.4-1.9-1.1-2.7c-0.7-0.7-1.6-1.1-2.6-1.1c0,0,0,0,0,0
+				c-8.7,0-24.6,2-32.9,15.4c-0.3,0.5-0.5,1.2-0.5,1.9v58.8C63,75.5,77.6,73.7,86.3,73.7C88.4,73.7,90.1,72,90.1,69.9z"/>
+    <path id="XMLID_28_" class="st17" d="M98.6,23h-2.7v47c0,5.3-4.3,9.5-9.6,9.6c-7.4,0-19.6,1.5-28.2,9.6
+				c14.9-3.7,30.7-1.3,39.7,0.8c1.1,0.3,2.3,0,3.2-0.7c0.9-0.7,1.4-1.8,1.4-2.9V26.7C102.3,24.6,100.7,23,98.6,23z"/>
+    <path id="XMLID_27_" class="st17" d="M4.1,69.9V23H1.4c-2.1,0-3.7,1.7-3.7,3.7v59.5c0,1.1,0.5,2.2,1.4,2.9c0.9,0.7,2.1,1,3.2,0.7
+				c9-2,24.7-4.4,39.7-0.8c-8.6-8.2-20.8-9.6-28.2-9.6C8.4,79.5,4.1,75.2,4.1,69.9z"/>
+  </symbol>
+  <symbol id="copyright" viewBox="0 0 100 100">
+    <path d="M50,84.4c-18.5,0-33.5-15-33.5-33.5s15-33.5,33.5-33.5c18.5,0,33.5,15,33.5,33.5S68.5,84.4,50,84.4z
+		 M22.1,50.9c0,15.4,12.5,27.9,27.9,27.9s27.9-12.5,27.9-27.9C77.9,35.5,65.4,23,50,23S22.1,35.5,22.1,50.9z M66.6,63.4
+		c0,6.1-9.8,8.4-16,8.4c-11.9,0-20.9-9.1-20.9-21.1c0-11.8,8.9-20.7,20.7-20.7c4.3,0,15.6,1.5,15.6,8.5v4.8c0,0.4-0.3,0.7-0.7,0.7
+		h-5.1c-0.4,0-0.7-0.3-0.7-0.7v-3.1c0-2.7-5.3-4-8.8-4c-8.2,0-13.8,5.9-13.8,14.3c0,8.8,5.9,15.2,14.2,15.2c3.1,0,9.1-1.2,9.1-3.9
+		v-3.1c0-0.4,0.3-0.7,0.7-0.7H66c0.3,0,0.7,0.3,0.7,0.7V63.4z"/>
+  </symbol>
+  <symbol id="ampersand" viewBox="0 0 100 100">
+    <style type="text/css">
+      .st18 {
+        fill: #FFFFFF;
+      }
+    </style>
+    <path id="XMLID_1_" class="st18" d="M50.3,89.9c-6.4,0-12.3-2.2-16.8-6.7c-9-9-9-23.6,0-32.5l20.8-19.8c1.2-1.2,1.8-2.7,1.8-4.4
+			c0-1.7-0.7-3.3-1.9-4.5c-2.5-2.5-7.1-2.5-9.6,0c-2.5,2.5-2.5,6.5,0,9L37.6,38c-6.4-6.4-6.4-16.7,0-23.1c6.4-6.4,17.3-6.4,23.7,0
+			c3.1,3.1,4.8,7.2,4.8,11.6s-1.7,8.5-4.8,11.5L40.5,57.7c-5,5-5,13.3,0.1,18.4c5.1,5.1,13.9,5.1,19,0c5.1-5.1,5.1-13.3,0-18.4
+			L56,54.2l10.8-10.8l6.5,7.1l-4.2,4.2c5.7,8.9,4.6,20.8-2.6,28.6C62.1,87.6,56.1,89.9,50.3,89.9L50.3,89.9z"/>
+  </symbol>
+  <symbol id="logo-footer" viewBox="0 0 100 100">
+    <style type="text/css">
+      .st19 {
+        fill: #FFFFFF;
+      }
+
+      .st20 {
+        fill: none;
+        stroke: #231F20;
+        stroke-width: 1.33;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <path class="st19" d="M33.1,66.6c-0.2,0.3-0.5,0.4-0.9,0.4c-0.4,0-0.7-0.1-1-0.3L15.5,51.9c-0.3-0.3-0.4-0.6-0.4-1
+			s0.1-0.7,0.4-1l15.7-14.8c0.3-0.2,0.6-0.3,1-0.3c0.4,0,0.7,0.1,0.9,0.4l4.7,5c0.3,0.3,0.4,0.6,0.4,1c0,0.4-0.2,0.7-0.4,0.9
+			l-10,8.7l10,8.7c0.2,0.2,0.3,0.5,0.4,0.9c0,0.4-0.1,0.7-0.4,1L33.1,66.6z M45.6,78.8c0.4,0.1,0.7,0.1,1-0.1s0.5-0.5,0.7-0.8
+			l14.9-51.4c0.1-0.4,0.1-0.7-0.1-1c-0.2-0.3-0.5-0.5-0.8-0.7l-6.7-2c-0.4-0.1-0.7,0-1,0.2c-0.3,0.2-0.5,0.5-0.7,0.8L38,75.3
+			c-0.1,0.4-0.1,0.7,0.1,1c0.2,0.3,0.5,0.5,0.8,0.7L45.6,78.8z M68.8,66.7c-0.3,0.2-0.6,0.3-1,0.3s-0.7-0.1-0.9-0.4l-4.7-5
+			c-0.3-0.3-0.4-0.6-0.4-1s0.2-0.7,0.4-0.9l10-8.7l-10-8.7c-0.2-0.2-0.3-0.5-0.4-0.9c0-0.4,0.1-0.7,0.4-1l4.7-5
+			c0.3-0.3,0.6-0.4,0.9-0.4s0.6,0.1,0.9,0.3l15.7,14.8c0.3,0.3,0.4,0.6,0.4,1s-0.1,0.7-0.4,1L68.8,66.7z"/>
+    <path class="st20" d="M72.3,90.1H27.7c-9.8,0-17.7-8-17.7-17.7V27.7c0-9.8,8-17.7,17.7-17.7h44.6
+		c9.8,0,17.7,8,17.7,17.7v44.6C90.1,82.1,82.1,90.1,72.3,90.1z"/>
+  </symbol>
+  <symbol id="love" viewBox="0 0 100 100">
+    <path d="M50,90c45.4-35.7,43.7-48.3,43.7-58.2S85.5,10,71.8,10S50,24.5,50,24.5S41.8,10,28.2,10S6.3,21.9,6.3,31.8
+	S4.6,54.4,50,90z"/>
+  </symbol>
+  <symbol id="linkedin" viewBox="0 0 100 100">
+    <path d="M18.8,31.3c-1.6-1.6-2.4-3.5-2.4-5.7c0-2.2,0.8-4.1,2.4-5.7s3.5-2.4,5.7-2.4c2.2,0,4.1,0.8,5.7,2.4
+		s2.4,3.5,2.4,5.7c0,2.2-0.8,4.1-2.4,5.7s-3.5,2.4-5.7,2.4C22.3,33.7,20.4,32.9,18.8,31.3z M17.5,84.6V39.9h13.9v44.8H17.5z
+		 M69.6,84.6V62.8c0-3.6-0.3-6.2-0.9-7.8c-1.1-2.7-3.2-4-6.4-4s-5.4,1.2-6.7,3.6c-1,1.8-1.5,4.4-1.5,7.9v22.2H40.3V39.9h13.3V46h0.1
+		c1-2,2.6-3.6,4.8-4.9c2.4-1.6,5.2-2.4,8.4-2.4c6.5,0,11,2,13.6,6.1c2,3.3,3,8.4,3,15.3v24.6H69.6z"/>
+  </symbol>
+  <symbol id="mail" viewBox="0 0 100 100">
+    <path d="M86.5,87.8c-1.4,1.4-3.1,2.1-5.1,2.1H18.7c-2,0-3.7-0.7-5.1-2.1s-2.1-3.1-2.1-5.1V43c0-2.4,0.9-4.3,2.7-5.7
+		C18.3,34.1,26.5,28,39,18.9l1.4-1.1c2-1.6,3.6-2.7,4.8-3.3c1.9-1.2,3.5-1.8,4.8-1.8s2.9,0.6,4.8,1.8c1.2,0.6,2.8,1.7,4.8,3.3
+		l1.4,1.1c12.5,9,20.7,15.2,24.9,18.4c1.8,1.4,2.7,3.3,2.7,5.7v39.6C88.6,84.7,87.9,86.4,86.5,87.8z M77.9,52.5
+		c-0.3-0.1-0.6,0-0.9,0.2L59.6,65.5c-2,1.6-3.6,2.7-4.8,3.3c-1.9,1.2-3.5,1.8-4.8,1.8s-2.9-0.6-4.8-1.8c-1.2-0.6-2.8-1.7-4.8-3.3
+		L23,52.7c-0.3-0.2-0.6-0.3-0.9-0.2s-0.6,0.3-0.8,0.5L20,55.1c-0.2,0.2-0.3,0.5-0.2,0.8s0.2,0.6,0.4,0.8l17.5,12.7
+		c2.3,1.8,4.2,3.1,5.7,3.9c2.4,1.4,4.6,2.1,6.6,2.1s4.2-0.7,6.6-2.1c1.5-0.8,3.4-2.1,5.7-3.9l17.5-12.7c0.2-0.2,0.3-0.5,0.4-0.8
+		c0-0.4,0-0.6-0.2-0.8L78.6,53C78.4,52.8,78.2,52.6,77.9,52.5z"/>
+  </symbol>
+  <symbol id="google-plus" viewBox="0 0 100 100">
+    <path d="M60.3,51.7c0,5.5-1.1,10.4-3.4,14.6c-2.3,4.2-5.5,7.6-9.7,10c-4.2,2.4-9,3.6-14.4,3.6
+		c-5.2,0-10-1.3-14.5-3.9c-4.4-2.6-7.9-6.1-10.5-10.5C5.3,61.1,4,56.3,4,51.1s1.3-10,3.8-14.4c2.5-4.4,6-7.9,10.5-10.5
+		c4.4-2.6,9.3-3.9,14.5-3.9c7.5,0,13.9,2.5,19.2,7.5l-7.8,7.5c-3-2.9-6.8-4.3-11.4-4.3c-3.2,0-6.2,0.8-8.9,2.4
+		c-2.7,1.6-4.9,3.8-6.5,6.6s-2.4,5.8-2.4,9.1c0,3.3,0.8,6.3,2.4,9.1s3.8,5,6.5,6.6c2.7,1.6,5.7,2.4,8.9,2.4c3.5,0,6.5-0.8,9.1-2.2
+		c2.1-1.2,3.8-2.9,5.1-5.1c1.1-1.7,1.8-3.3,2.1-4.9H32.8v-10h27.1C60.2,48.6,60.3,50.2,60.3,51.7z M87.6,39.5h-8.4v8.4H71v8.4h8.2
+		v8.4h8.4v-8.4H96v-8.4h-8.4V39.5z"/>
+  </symbol>
+  <symbol id="facebook" viewBox="0 0 100 100">
+    <path d="M41.8,55.1H30.3V41.5h11.5V30.8c0-5.7,1.6-10.1,4.8-13.2s7.4-4.7,12.7-4.7c4.3,0,7.8,0.2,10.5,0.6v12.1
+		h-7.2c-2.7,0-4.5,0.6-5.5,1.8c-0.8,1-1.2,2.6-1.2,4.8v9.4h12.7l-1.8,13.6H55.8v34.2H41.8V55.1z"/>
+  </symbol>
+</svg>
+<header class="header">
+  <div class="header__content u-center-margin u-content-width u-center-text u-flex-column-vertical-center">
+    <div class="logo u-margin-bottom-medium">
+      <img src="assets/img/Logo.png" class="header__logo" alt="This image represent logo for my site Portfolio">
+    </div>
+    <h1 class="heading-primary u-margin-bottom-small">Junior Front&#45;end Developer</h1>
+    <h2 class="heading-secondary u-margin-bottom-medium">I create websites using modern technologies and I enjoy while
+      doing it.</h2>
+    <div class="avatar u-margin-bottom-medium">
+      <img src="assets/img/Avatar.svg" class="header__avatar-main"
+           alt="This image represents avatar for my site Portfolio">
+    </div>
+    <img src="assets/img/Hero_blue.svg" class="image_responsive" alt="This image represent multiple responsive devices">
+  </div>
+</header>
+<section class="section-introduction">
+  <div class="section-introduction-container u-center-margin u-margin-top-big u-center-text">
+    <h3 class="heading-tertiary u-margin-bottom-next-to-small">Hi, I'm Aleksandar. Nice to meet you.</h3>
+    <!--<div class="section-introduction__left"></div>-->
+    <!--<div class="section-introduction__right"></div>-->
+    <p class="section-introduction__intro-text">
+      I’m 29 years old. I code simple things and I tend to do a little bit of designing. I have lot of experience in
+      developing websites that are responsive using HTML5 and CSS3 and many other technologies. At
+      the moment I’m learning new stuff so that I can improve my websites.
+    </p>
+  </div>
+</section>
+<section class="section-third">
+  <article class="techtools u-content-width u-center-margin u-padding-bottom-small">
+    <h2 class="heading-secondary u-center-text u-margin-top-medium u-margin-bottom-small">Code</h2>
+    <div class="techtools-html5 u-flex-column-vertical-center u-padding-top-medium u-padding-bottom-small">
+      <svg class="techtools-html5__svg">
+        <use xlink:href="#html5"
+        </use></svg>
+      <h4 class="heading-quaternary u-center-text">HTML5</h4>
+    </div>
+    <div class="techtools-css3 u-flex-column-vertical-center u-padding-top-medium u-padding-bottom-small">
+      <svg class="techtools-css3__svg">
+        <use xlink:href="#css3"></use>
+      </svg>
+      <h4 class="heading-quaternary u-center-text">CSS3</h4>
+    </div>
+    <div class="techtools-sass u-flex-column-vertical-center u-padding-top-medium u-padding-bottom-small">
+      <svg class="techtools-sass__svg">
+        <use xlink:href="#sass"></use>
+      </svg>
+      <h4 class="heading-quaternary u-center-text">Sass(scss)</h4>
+    </div>
+    <h2 class="heading-secondary u-center-text u-margin-top-medium u-margin-bottom-small">Tools</h2>
+    <div class="techtools-git u-flex-column-vertical-center u-padding-top-medium u-padding-bottom-small">
+      <svg class="techtools-git__svg">
+        <use xlink:href="#git"></use>
+      </svg>
+      <h4 class="heading-quaternary u-center-text">Git</h4>
+    </div>
+    <div class="techtools-bem u-flex-column-vertical-center u-padding-top-medium u-padding-bottom-small">
+      <svg class="techtools-bem__svg">
+        <use xlink:href="#bem"></use>
+      </svg>
+      <h4 class="heading-quaternary u-center-text">BEM</h4>
+    </div>
+    <div class="techtools-npm u-flex-column-vertical-center u-padding-top-medium u-padding-bottom-small">
+      <svg class="techtools-npm__svg">
+        <use xlink:href="#npm"></use>
+      </svg>
+      <h4 class="heading-quaternary u-center-text">NPM</h4>
+    </div>
+    <div class="techtools-vscode u-padding-top-medium u-padding-bottom-small">
+      <div class="u-flex-vertical-center">
+        <img src="assets/img/Vscode.png" class="techtools-vscode__image" alt="This is the image of editor that I use.">
+      </div>
+      <h4 class="heading-quaternary u-center-text">VS Code</h4>
+    </div>
+    <div class="techtools-webstorm u-flex-column-vertical-center u-padding-top-medium u-padding-bottom-small">
+      <svg class="techtools-webstorm__svg">
+        <use xlink:href="#webstorm"></use>
+      </svg>
+      <h4 class="heading-quaternary u-center-text">Webstorm</h4>
+    </div>
+    <div class="techtools-brackets u-padding-top-medium u-padding-bottom-small">
+      <div class="u-flex-vertical-center">
+        <img src="assets/img/Brackets-.png" class="techtools-brackets__image" alt="This is the editor that I use">
+      </div>
+      <h4 class="heading-quaternary u-center-text">Brackets</h4>
+    </div>
+    <div class="techtools-photoshop u-flex-column-vertical-center u-padding-top-medium u-padding-bottom-small">
+      <svg class="techtools-photoshop__svg">
+        <use xlink:href="#photoshop"></use>
+      </svg>
+      <h4 class="heading-quaternary u-center-text">Photoshop</h4>
+    </div>
+    <div class="techtools-illustrator u-flex-column-vertical-center u-padding-top-medium u-padding-bottom-small">
+      <svg class="techtools-illustrator__svg">
+        <use xlink:href="#illustrator"></use>
+      </svg>
+      <h4 class="heading-quaternary u-center-text">Illustrator</h4>
+    </div>
+    <div class="techtools-cmder u-padding-top-medium u-padding-bottom-small">
+      <div class="u-flex-vertical-center">
+        <img src="assets/img/Cmder.png" class="techtools-cmder__image"
+             alt="This is the image of the shell program that I use">
+      </div>
+      <h4 class="heading-quaternary u-center-text">CMDER</h4>
+    </div>
+  </article>
+  <article class="recent-projects u-padding-bottom-large">
+    <h2 class="heading-secondary u-center-text">My Recent Projects</h2>
+    <h3 class="heading-tertiary u-center-text u-margin-bottom-big">Here are few of my recent projects, for more visit:
+      <a href="https://github.com/mothaphonkin" class="recent-projects__github" target="_blank">
+        <svg class="recent-projects__svg">
+          <use xlink:href="#github"></use>
+        </svg>
+      </a></h3>
+    <div class="recent-projects__grid u-content-width u-center-margin u-padding-bottom-medium">
+
+      <div class="box box1">
+        <h4 class="heading-quaternary u-position-absolute">Natours</h4>
+        <a href="https://github.com/mothaphonkin/Natours" class="link button u-position-absolute" target="_blank">
+          <span class="u-position-absolute">Github</span>
+          <svg class="recent-projects__angle-right">
+            <use xlink:href="#angle-right"></use>
+          </svg>
+        </a>
+        <div class="image-container"></div>
+      </div>
+
+      <div class="box box2 u-flex-column-vertical-center">
+        <h4 class="heading-quaternary u-position-absolute">Colibri</h4>
+        <a href="https://github.com/mothaphonkin/Responsive-full-page-background"
+           class="link button u-position-absolute" target="_blank">
+          <span class="u-position-absolute">Github</span>
+          <svg class="recent-projects__angle-right">
+            <use xlink:href="#angle-right"></use>
+          </svg>
+        </a>
+        <div class="image-container"></div>
+      </div>
+
+      <div class="box box3 u-flex-column-vertical-center">
+        <h4 class="heading-quaternary u-position-absolute">Devslopes</h4>
+        <a href="https://github.com/mothaphonkin/Devslopes" class="link button u-position-absolute" target="_blank">
+          <span class="u-position-absolute">Github</span>
+          <svg class="recent-projects__angle-right">
+            <use xlink:href="#angle-right"></use>
+          </svg>
+        </a>
+        <div class="image-container"></div>
+      </div>
+
+      <div class="box box4 u-flex-column-vertical-center">
+        <h4 class="heading-quaternary u-position-absolute">Theory</h4>
+        <a href="https://github.com/mothaphonkin/Theory" class="link button u-position-absolute" target="_blank">
+          <span class="u-position-absolute">Github</span>
+          <svg class="recent-projects__angle-right">
+            <use xlink:href="#angle-right"></use>
+          </svg>
+        </a>
+        <div class="image-container"></div>
+      </div>
+
+      <div class="box box5 u-flex-column-vertical-center">
+        <h4 class="heading-quaternary u-position-absolute">Hielo</h4>
+        <a href="https://github.com/mothaphonkin/Hielo" class="link button u-position-absolute" target="_blank">
+          <span class="u-position-absolute">Github</span>
+          <svg class="recent-projects__angle-right">
+            <use xlink:href="#angle-right"></use>
+          </svg>
+        </a>
+        <div class="image-container"></div>
+      </div>
+
+      <div class="box box6 u-flex-column-vertical-center">
+        <h4 class="heading-quaternary u-position-absolute">Caminar</h4>
+        <a href="https://github.com/mothaphonkin/Caminar" class="link button u-position-absolute" target="_blank">
+          <span class="u-position-absolute">Github</span>
+          <svg class="recent-projects__angle-right">
+            <use xlink:href="#angle-right"></use>
+          </svg>
+        </a>
+        <div class="image-container"></div>
+      </div>
+    </div>
+  </article>
+</section>
+<section class="section-education u-padding-bottom-large">
+  <article class="formal-edu u-content-width u-center-margin">
+    <h2 class="heading-secondary u-center-text u-margin-bottom-small">Formal Education</h2>
+    <h3 class="heading-tertiary u-center-text u-margin-bottom-big">My education, plus some courses that I have
+      attended</h3>
+
+    <div class="grid-container u-margin-bottom-large">
+      <div class="formal-edu__education">
+        <div class="u-helper u-flex-column-vertical-center">
+          <svg class="svg-education">
+            <use xlink:href="#education"></use>
+          </svg>
+          <h2 class="heading-secondary u-margin-top-small u-margin-bottom-next-to-small">Education</h2>
+        </div>
+        <ul class="formal-edu__list">
+          <li class="formal-edu__item"><span class="u-span-helper">Technical Faculty Mihajlo Pupin</span></li>
+          <li class="formal-edu__item u-margin-bottom-smallest"><span class="u-span-helper">Zrenjanin</span></li>
+          <li class="formal-edu__item u-margin-bottom-medium">
+            <span class="u-span-helper"> Bachelor in Information Technologies</span>
+          </li>
+          <li class="formal-edu__item"><span class="u-span-invisible">1</span></li>
+          <li class="formal-edu__item"><span class="u-span-invisible">2</span></li>
+          <li class="formal-edu__item"><span class="u-span-invisible">3</span></li>
+        </ul>
+
+      </div>
+      <div class="formal-edu__logo u-flex-column-vertical-center">
+        <div>
+          <svg class="svg-browser">
+            <use xlink:href="#browser"></use>
+          </svg>
+        </div>
+
+      </div>
+      <div class="formal-edu__courses">
+        <div class="u-helper u-flex-column-vertical-center">
+          <svg class="svg-courses">
+            <use xlink:href="#courses"></use>
+          </svg>
+          <h2 class="heading-secondary u-margin-top-small u-margin-bottom-next-to-small">Courses</h2>
+        </div>
+        <ul class="formal-edu__list">
+          <li class="formal-edu__item"><span class="u-span-helper">English language B2</span></li>
+          <li class="formal-edu__item u-margin-bottom-smallest"><span
+                  class="u-span-helper">New Age School Zrenjanin</span></li>
+          <li class="formal-edu__item"><span class="u-span-helper">English language B2</span></li>
+          <li class="formal-edu__item u-margin-bottom-smallest"><span
+                  class="u-span-helper">New Age School Zrenjanin</span></li>
+          <li class="formal-edu__item"><span class="u-span-helper">Creating websites</span></li>
+          <li class="formal-edu__item u-margin-bottom-next-to-small"><span
+                  class="u-span-helper">Startit, Zrenjanin</span></li>
+        </ul>
+      </div>
+    </div>
+
+  </article>
+</section>
+<footer class="footer u-padding-bottom-big">
+
+  <div class="footer__contact u-content-width u-center-margin u-padding-top-next-to-medium u-padding-bottom-next-to-medium u-flex-vertical-center u-margin-bottom-big">
+    <p class="footer__contact-info">Start a new project</p>
+    <p class="footer__get-in-touch">Get in touch</p>
+    <a href="mailto:sasajevremov@gmail.com" class="footer__contact-me button">Contact me</a>
+  </div>
+
+  <div class="footer__down u-content-width-small u-flex-column-vertical-center u-center-margin">
+      <span class="footer__down-logo">
+        <svg class="footer__logo u-margin-bottom-small">
+          <use xlink:href="#logo-footer"></use>
+        </svg>
+      </span>
+    <p class="footer__moto u-center-text u-margin-bottom-medium">
+      Coding, learning just having <br>fun.
+    </p>
+    <p class="footer__copy u-center-text">
+      <small class="footer_small">Handmade by me with
+        <svg class="footer__love">
+          <use xlink:href="#love"></use>
+        </svg>
+        <br>
+        <svg class="footer__copyright">
+          <use xlink:href="#copyright"></use>
+        </svg>
+        twentyeighteen
+      </small>
+    </p>
+    <div class="footer__credit u-margin-top-medium">
+      <div>
+        Icon made by <a href="https://www.flaticon.com/authors/becris" title="Becris" target="_blank">Becris</a> from <a
+              href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a
+              href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0
+        BY</a>
+      </div>
+      <div>
+        Icon made by <a href="https://www.flaticon.com/authors/alfredo-hernandez" title="Alfredo Hernandez"
+                        target="_blank">Alfredo Hernandez</a> from <a href="https://www.flaticon.com/" title="Flaticon"
+                                                                      target="_blank">www.flaticon.com</a> is licensed
+        by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0
+        BY</a>
+      </div>
+      <div>
+        Icon made by <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a
+              href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a
+              href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0
+        BY</a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+</body>
+</html>
